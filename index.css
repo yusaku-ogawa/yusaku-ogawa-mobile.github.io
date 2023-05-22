@@ -1,0 +1,687 @@
+/* 共通スタイル */
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ヘッダースタイル */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  border-bottom: 3px solid #db3d3d;
+  background-color: #262626;
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  margin-bottom: 70px;
+  z-index: 9999;
+}
+
+.logo {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 24px;
+}
+
+h2 {
+  color: #fff;
+  font-size: 12px;
+  margin-left: 0.5em;
+  margin-top: 1em;
+}
+
+nav {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;  
+}
+
+header a:hover {
+  color: #db3d3d;
+}
+
+.menu-icon {
+  cursor: pointer;
+  font-size: 35px;
+  color: #fff;
+  margin-right: 25px;
+}
+
+.menu-icon i {
+  transition: transform 0.3s ease-in-out;
+}
+
+#menu-checkbox {
+  display: none;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  background-color: rgba(26, 26, 26, 0.8);
+  padding: 0;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 100%;
+  margin-top: 0;
+  height: 100%;
+  position: fixed;
+  align-items: flex-end; 
+  z-index: 9999;
+}
+
+.menu ul {
+  list-style: none;
+  height: 100%;
+  font-size: 25px;
+  margin: 0;
+}
+
+.menu li {
+  padding: 10px 20px;
+  height: 50px;
+  border-bottom: 2px solid white;
+  background-color: #262626;
+  width: 50%;
+}
+
+.menu li:hover {
+  background-color: #333;
+}
+
+
+.menu a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#menu-checkbox:checked ~ .menu {
+  display: flex;
+}
+
+
+/* 多くの方は"自分なりの理想"を持っています */
+
+#top-image {
+  width: 100%;
+}
+
+#top-image img {
+  width: 100%;
+  height: auto;
+  margin-top: 70px;
+}
+
+.page-title {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  margin: -20px 0; 
+}
+
+.page-title h1 {
+  color: #333;
+  font-size: 25px;
+  text-align: center;
+  border-bottom: 2px solid #262626;
+}
+
+
+/* プロフィールセクション */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto; 
+}
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container h3 {
+  display: inline-block;
+  font-weight: bold;
+  color: #000000;
+  text-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 0.1em;
+}
+
+.trainer-profile-pic {
+  width: 100%;
+  border-radius: 50%;
+  height: 300px;
+}
+
+.info-history-interests-section {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.trainer-tagline {
+  color: #333,0.5;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  background-color: #F7E7CE;
+}
+
+.history-section {
+  color: #000000;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.history-section h4 {
+  font-size: 35px;
+  margin: 0 auto;
+  text-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid #333;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.history-section h5 {
+  font-size: 21px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 0.1rem rgb(255, 255, 255);
+  text-align: center;
+  color: blue;
+}
+
+.history-section p {
+  font-size: 16px;
+  width: 95%;
+  text-align: center;
+  padding-left: 1em;
+}
+
+.second-text {
+  font-size: 16px;
+  width: 95%;
+  margin-bottom: 10px;
+  text-align: center;
+  padding-left: 1em;
+}
+
+.interests-section {
+  background-color: #F7E7CE;
+  color: #000000;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.interests-section h4 {
+  font-size: 30px;
+  padding-top: 10px;
+  text-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.5);
+  text-align: center;
+  border-bottom: 2px solid #333;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.interests-section p {
+  font-size: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+/* 資格セクション */
+.credentials-section {
+  width: 100%;
+  display: column;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  border-radius: 1rem;
+  margin-bottom: 30px;
+  text-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.5);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.credentials-section h4 {
+  font-size: 30px;
+  text-align: center;
+  border-bottom: 2px solid #333;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.credentials-section p {
+  font-size: 17px;
+  line-height: 1.5; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  border-bottom: 0.5px solid #555;
+  width: 93%;
+  margin: 0 auto;
+}
+
+#worries {
+  background-color: #F7E7CE;
+  padding: 40px 0;
+  text-align: center;
+  color: #555;
+  margin-top: -32px;
+}
+
+#worries h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #262626;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-wrapper {
+  flex-basis: 30%;
+  margin-bottom: 20px;
+  width: 90%;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 40vh;
+}
+
+.image-text {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.image-text2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.description {
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ff0000;
+  text-shadow: 0 0 10px #ffffff;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.plan-title {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  margin: -20px 0; 
+}
+
+.plan-title h1 {
+  font-size: 32px;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+  display: inline-block;
+  padding: 0 20px;
+  color: #333;
+}
+
+.training-plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.special-plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.simple-plan,
+.pair-plan {
+  background-color: #E6E6FA;
+  box-shadow: #262626;
+  width: 90%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+
+.visiting-plan,
+.online-plan {
+  background-color: #ffdab9;
+  box-shadow: #262626;
+  width: 90%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.perple,
+.pink {
+  font-size: 24px;
+  color: #4d4d4d;
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+  border-bottom: 2px solid #4d4d4d;
+  width: 90%;
+}
+
+.price {
+  font-size: 25px;
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+}
+
+strong {
+  font-size: 40px;
+  color: red;
+  text-shadow: 0 0 3px white, 0 0 5px red, 0 0 7px white, 0 0 10px red;
+}
+
+.text {
+  font-size: 15px;
+  color: #000;
+  line-height: 1.7em;
+  margin-top: 10px;
+  padding-left: 15px;
+}
+
+.atension {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.atension p {
+  font-size: 13px;
+  margin-top: 5px;
+  line-height: 1.5em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.application {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: -40px;
+  background-color: #F7E7CE;
+}
+
+.mousikomi {
+  font-size: 24px;
+  color: #fff;
+  background-color: #262626;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.normal {
+  margin-bottom: 25px;
+}
+
+.counseling {
+  margin-bottom: 25px;
+}
+
+
+.normal p,
+.counseling p {
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+.application .counseling {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.application .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.application .social-icons div {
+  display: flex;
+  align-items: center;
+}
+
+.application .social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.application .social-icons img {
+  width: 25vw;
+  height: auto;
+  object-fit: contain;
+}
+
+
+/* よくある質問 */
+#faq {
+  background-color: #f9f9f9;
+  padding: 0;
+  text-align: center;
+}
+
+.faq-title {
+  margin-bottom: 30px;
+  margin-right: 18px;
+}
+
+.faq-title h2 {
+  font-size: 32px;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+  display: inline-block;
+  padding: 0 20px;
+  color: #333;
+}
+
+.accordion-container {
+  max-width: 800px;
+  margin: 0;
+}
+
+.accordion {
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.accordion:last-child {
+  border-bottom: none;
+}
+
+.accordion-title {
+  padding: 15px;
+  background-color: #eee;
+  color: #333;
+  font-weight: bold;
+}
+
+.accordion-content {
+  padding: 15px;
+  display: none;
+  color: #555;
+}
+
+.accordion.active .accordion-title {
+  background-color: #ddd;
+}
+
+.accordion.active .accordion-content {
+  display: block;
+}
+
+/* お問い合わせ */
+.contact {
+  text-align: center;
+  background-color: #F7E7CE;
+  margin-top: 35px;
+}
+
+.contact h2 {
+  font-size: 32px;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+  display: inline-block;
+  padding: 0 20px;
+  color: #333;
+  margin-right: 18px;
+}
+
+.contact p {
+  font-size: 20px;
+  margin: 20px;
+}
+
+.counseling {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: #333;
+  text-decoration: none;
+  flex: 1;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.social-icons img {
+  width: 25%;
+  height: 25%;
+  object-fit: contain;
+  margin: 0 25px;
+  margin-bottom: 20px;
+}
+
+/* フッタースタイル */
+footer {
+  background-color: #262626;
+  color: #fff;
+  padding: 20px 0;
+  margin-top: -25px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.footer-links ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-links li {
+  margin-right: 20px;
+}
+
+.footer-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-links a {
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
