@@ -207,7 +207,7 @@ header a:hover {
 .trainer-profile-pic {
   width: 100%;
   border-radius: 50%;
-  height: 300px;
+  height: 100%;
 }
 
 .info-history-interests-section {
